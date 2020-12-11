@@ -1,7 +1,7 @@
 import timeit
 
-n = 1000
 i = 1000
+n = 1000
 
 py = timeit.timeit("main.test(%i)" % i, setup="import main", number=n)
 cy = timeit.timeit("cmain.test(%i)" % i, setup="import cmain", number=n)
