@@ -14,6 +14,13 @@ Make shell file executable: `chmod +x run.sh`
 
 Run: `./run.sh`
 
+```bash
+Python: 0.0561939ns
+Cython: 0.0001021ns
+======================
+Cython is 550x faster
+```
+
 **Individual steps:**
 
 - Build C file (`.c`) and Shared Object file (`.so`): `python setup.py -q build_ext --inplace`
